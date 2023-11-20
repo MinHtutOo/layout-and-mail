@@ -19,8 +19,9 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="{{url('products/cart')}}"><i class="fa fa-cart-plus" aria-hidden="true"></i> Cart
             @if(session('items'))
+              {{count(session('items'))}}
             @endif
-            {{count(session('items'))}}
+            
           </a>
         </li>
 
